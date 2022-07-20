@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        Take a number form user and calculate sum of all number .<br><br>
+
+
+        <form name="f">
+            No : <input type="text" name="no"><br><br>
+            <input type="button" value="Add" onclick="insertNo()">
+            <input type="button" value="print" onclick="printArray()">
+            <input type="button" value="printMax" onclick="printMax()">
+            <input type="button" value="Sort"  onclick="printSort()">
+            <input type="button" value="Search" onclick="searchValue()">
+    </form>
+
+    <br>
+    <p id="pArray"></p>
+    <p id="pMax"></p>
+    <p id="pSort"></p>
+    <p id="pSearch"></p>
+    <script>
+        var array = []
+        function insertNo(){
+                let no = parseInt(document.f.no.value);
+                array.push(no);
+                document.f.no.value = "";
+              
+                printArray();
+                printMax();
+                printSort();
+                searchValue();
+              
+        }
+        function printArray(){
+            let sum = 0;
+            for(let i = 0 ; i<array.length; i++)
+            {
+                sum = sum + array[i];  
+            }
+            document.getElementById("pArray").innerHTML = array+ " =>" +sum;
+        }
+        function printMax(){
+            let max = array[0];
+
+            for(let i = 0; i<array.length ;i++)
+            {
+                if(max < array[i])
+                {
+                    max = array[i];
+                }
+            }
+            document.getElementById("pMax").innerHTML = "Max number ::" +max;
+        }
+        function printSort(){
+            let temp;
+            for( let i = 0 ;i<array.length ; i++)
+            {
+                for(let j = i+1 ; j<array.length ; j++)
+                {
+                    if(array[i] > array[j])
+                    {
+                        temp = array[i];
+                        array[i] = array[j];
+                        array[j] = temp;
+                    }
+                }
+            }
+            for(let i = 0 ; i<array.length;i++){
+            document.getElementById("pSort").innerHTML = "sorted list ::" +array;
+        }
+        function searchValue(){
+            var a = parseInt(prompt("Enter the number you want to search::"));
+            if(a == no)
+            {
+                document.getElementById("pSearch").innerHTML = "The number is present...!!!";
+                
+            }
+            else{
+                
+                document.getElementById("pSearch").innerHTML = "The number is not  present...!!";
+
+            }
+        }
+    }
+      
+    </script>
+</body>
+</html>

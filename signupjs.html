@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+
+    <form>
+        <h1>Sign Up</h1>
+        
+             First Name::
+                <input type="text" name="n1" placeholder="Enter First Name" /><br>
+            
+        <br>
+        
+            Last Name::
+            
+                 <input type="text" placeholder="Enter Last Name" name="n2" /><br>
+    
+            <br>
+             Email ID::
+                      <input type="text" placeholder="Enter Last Email" name="n3" /><br>
+                
+                <br>
+                 password::
+                        <input type="password" placeholder="Enter password" name="pass"  /><br>
+                    <br>
+            
+                        Confirmpassword::
+                        
+                             <input type="password" placeholder="Enter password" name="pass1"/><br>
+                    
+                        <br>
+        
+                            Gender::
+                        
+                                Male:<input type="radio" value="male" checked="checked" name="gender">
+                                Female:<input type="radio" value="male" checked="checked" name="gender">
+            
+                        <br>
+                        <br>
+                    
+                            City::
+                    
+                                <select name="country">
+                                    <option value="-1">Select city</option>
+                                    <option value="abad">Ahmedabad</option>
+                                    <option value="surat">Surat</option>
+                                    <option value="delhi">Delhi</option>
+            
+                                </select>
+
+                        <br>
+                        <br>
+                            Hobby::
+                            <br>
+                        
+                                Dance:<input type="checkbox" name="hobby"  value="dance" />
+                                Sining:<input type="checkbox" name="hobby" value="singing" />
+                               Cricket:<input type="checkbox" name="hobby" value="ckt" />
+                               Reading:<input type="checkbox" name="hobby" value="read" />
+                               
+
+                    
+                        <br>
+                        <br>
+                       
+                                <button type="submit" onclick="calc()">Submit</button>
+
+                           
+                            
+        </form>
+
+<script>
+
+        function calc(){
+            
+            var pwd1= document.getElementById("pass");
+            var ped2 = document.getElementById("pass1");
+            if(pwd1 != pwd2 )
+            {
+                alert(" password did not match");
+            }
+        }
+
+     
+
+
+        
+</script>
+    </body>

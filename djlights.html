@@ -1,0 +1,41 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <title>page</title>
+</head>
+<body onload="red()">
+
+<h1>Hello...!!!</h1>
+</body>
+
+<script>
+    function red(){
+        document.body.bgColor="red";
+        setTimeout(yellow,1000);
+    }
+    function yellow(){
+        document.body.bgColor="yellow";
+        setTimeout(blue,1000);
+    }
+    function blue(){
+        document.body.bgColor="blue";
+        setTimeout(green,1000);
+    }
+    function green(){
+        document.body.bgColor="green";
+        setTimeout(orange,1000);
+    }
+    function orange(){
+        document.body.bgColor="orange";
+        setTimeout(purple,1000);
+    }
+    function purple(){
+        document.body.bgColor="purple";
+        setTimeout(red,1000);
+    }
+    
+</script>
+</html>

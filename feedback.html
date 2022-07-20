@@ -1,0 +1,98 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <title>page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 400px;
+            margin-top: 100px;
+            margin-left: 500px;
+          
+       
+    }
+    h3{
+        margin-left: 100px;
+    }
+    .btn{
+        width: 100px;
+        padding: 10px;
+        border: none;
+        background-color: gray;
+        letter-spacing: 2px;
+        font-weight: bold;
+        color: white;
+        
+    }
+    </style>
+<body>
+   
+    <div class="box">
+
+    <h3>FeedBack Form</h3>
+    <hr>
+    <center>
+
+    <tr>
+            <td>TextBox::</td>
+            <td>
+            <input type="text" placeholder="Enter your text here" class="txt">
+        </td>
+    </tr>
+    <br><br>
+    <tr>
+        
+        <td>TextArea</td>
+        <td>
+     <textarea  id="area"  name="area" rows="2" cols="40" placeholder="your text here"></textarea>
+    </td>
+    </tr>
+    <br><br>  
+    <tr>
+        <td>Hobby::</td>
+        <td>
+            WhatsApp:<input type="checkbox" name="hobby"  value="wp" />
+           <br> Insta:<input type="checkbox" name="hobby"  value="insta" />
+           <br>Cricket:<input type="checkbox" name="hobby" checked="checked" value="ckt" />
+        </td>
+    </tr>
+    <br><br>  
+    <tr>
+        <td>RadioButton::</td>
+        <td>
+            Form:<input type="radio" value="male" checked="checked" name="gender">
+            Form1:<input type="radio" value="female" checked="checked" name="gender">
+
+        </td>
+    </tr>
+    <br><br>
+    <tr>
+        <td>Country::</td>
+        <td>
+            <select name="country">
+                <option value="-1">Select country</option>
+                <option value="in">India</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+
+            </select>
+        </td>
+    </tr>
+    <br><br>
+    <tr>
+        <td colspan="2" align="center"><input type="submit" value="submit" class="btn"/></td>
+    </tr>
+    </table>
+
+</div>
+</center>
+
+</body>
+</html>

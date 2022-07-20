@@ -1,0 +1,111 @@
+
+ .header-home{
+    display:flex;
+    background-color: whitesmoke
+ }
+
+
+ .header-home .list{
+    display: flex;
+    padding: 20px;
+    margin-left: 450px;
+    font-size: 30px;
+    text-decoration: none;
+    
+    
+    
+    
+    
+
+}
+.list a{
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+}
+.list a:hover{
+   
+        color: red;
+        text-decoration: none;
+
+
+}
+    
+
+ 
+.part .box img{
+    width:10px;
+}
+.cover img{
+    width:900px;
+    height:550px;
+    
+    top: 0;
+}
+.text{
+    position: absolute;
+    top: 20%;
+    left: 4%;
+}
+h1{
+    font-size: 70px;
+    font-family: barlow condensed,sans-serif;
+    text-transform: capitalize;
+    width: 460px;
+    word-spacing: 0px;
+    font-weight: normal;
+    line-height: 82px;
+    
+}
+h4{
+   position: absolute;
+    
+    font-size: 18px;
+    font-family: barlow condensed,sans-serif;
+    
+    text-transform: uppercase;
+
+}
+.btn{
+    border: 2px solid black;
+    background-color: lightcoral;
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 50px;
+}
+.btn :hover{
+    background-color: red;
+    border: red;
+}
+.cover{
+    background-color: lightgray;
+}
+.cover .text img{
+    width:200px;
+    float: left;
+    height: 300px;
+    margin-top: 1px;
+    top:10%;
+    margin-left: 870px;
+    border: 1px solid gray;
+    
+}
+.cover .text .kurti img{
+    width:200px;
+    margin-left: 1080;
+}
+.cover .text .bag img{
+    width:200px;
+    margin-left: 1080px;
+    margin-top:350px;
+    height: 100px;
+}
+.cover .text .purse img{
+    width:200px;
+    margin-left: 870px;
+    margin-top: 350px;
+    height: 100px;
+}
+
+
+

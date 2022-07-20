@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<style>
+    body{
+        background-color:rgb(161, 10, 81);
+    }
+    .box{
+       width: 550px;
+       background-color: white;
+       height: 560px;
+       padding: 10px;
+       border: 3px solid white;
+        
+    }
+    h1{
+        align-items: center;
+        margin-top: 1px;
+        margin-bottom: 1px;
+
+    }
+    .btn{
+        margin-left: 400px;
+        background-color: #03C04A;
+        color: white;
+        border: 2px solid #03C04A;
+        border-radius: 3px;
+        width: 120px;
+    }
+    .txt{
+        width: 200px;
+        padding: 6px;
+        border: 1px solid black;
+    }
+    .mail{
+        width: 200px;
+        padding: 6px;
+        border: 1px solid black;
+    }
+    .slct{
+        width: 200px;
+        padding: 5px;
+    }
+    .rng{
+        background-color: #03C04A;
+        color:white;
+        border: 1px solid #03C04A;
+        border-radius: 3px;
+    }
+
+</style>
+<body>
+    <center>
+        <div class="box">
+            
+                <tr>
+                    <td><h1>Create Account</h1></td>
+                </tr>
+                <hr>
+                <table>
+                <tr>
+                    <td style="color: #03C04A; font-size: 20px;">First name*</td>
+                    <td style="color: #03C04A;font-size: 20px;">Last name</td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="txt" placeholder="enter your first name"></td>
+                    <td><input type="text" class="txt" placeholder="enter your last name"></td>
+                </tr>
+                <tr>
+                    <td style="color: #03C04A;font-size: 20px;">Email*</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="email" class="mail" placeholder="enter your email">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: #03C04A;font-size: 20px;">Password*</td>
+                    <td style="color: #03C04A;font-size: 20px;">Confirm Password*</td>
+                </tr>
+                <tr>
+                    <td><input type="password" class="txt" placeholder="enter your password"></td>
+                    <td><input type="password" class="txt" placeholder="enter your password agian"></td>
+                </tr>
+                <tr>
+                    <td style="color: #03C04A;font-size: 20px;">Gender</td>
+                    <td style="color: #03C04A;font-size: 20px;">Hobbies</td>
+                </tr>
+                <tr>
+                    <td>
+                    <input type="radio" value="male" checked="checked" name="gender" class="gen">Male
+                    <input type="radio" value="male" checked="checked" name="gender" class="genn">Female
+                    <td>
+                        <input type="checkbox" name="hobby"  value="Music" class="genn">Music 
+                        <input type="checkbox" name="hobby"  value="Sports" class="genn">Sports 
+                        <input type="checkbox" name="hobby"  value="Travel" class="genn">Travel 
+                        <input type="checkbox" name="hobby"  value="Movies" class="genn">Movies 
+
+                    </td>
+                </td>
+             </tr>
+             <tr>
+                 <td style="color: #03C04A;font-size: 20px;">Source of Income</td>
+                 <td style="color: #03C04A;font-size: 20px;">Income</td>
+             </tr>
+             <tr>
+             <td>
+                 <select name="Employed" class="slct">
+                     <option value="Employed">Employed</option>
+                     <option value="Intrest">Intrest</option>
+                     <option value="Profit">Profit</option>
+                 </select>
+             </td>
+             <td>
+                 <input type="range" value="income"><input type="button" value="20K" class="rng">
+             </td>
+            </tr>
+            <tr>
+                <td style="color: #03C04A;font-size: 20px;">Upload Profile Picture</td>
+                <td style="color: #03C04A;font-size: 20px;">Age</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="file" name="ProfilePic"> </td>
+                    <td><input type="number" value="number"></td>
+            </tr>
+            <tr>
+                <td style="color: #03C04A;font-size: 20px;">Bio</td>
+            </tr>
+            <tr>
+                <td><textarea name="Bio" cols="30" rows="5"></textarea></td>
+            </tr>
+        </table>
+        <hr>
+            <tr>
+                <td><input type="button" value="Create "class="btn"></td>
+            </tr>
+            
+        </div>
+    </center>
+    
+</body>    

@@ -1,0 +1,25 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body onclick="print()">
+
+        welcome , <span id="user"></span>
+        <br><br>
+        <u onclick="logout()" style="cursor: pointer;">Logout</u>
+
+    </body>
+    <script>
+        function print(){
+            let firstName = localStorage.getItem("firstName");
+            document.getElementById("user").innerHTML = firstName
+        }
+        function logout(){
+            localStorage.clear()
+            window.location.href = "storage-api.html";
+        }
+    </script>

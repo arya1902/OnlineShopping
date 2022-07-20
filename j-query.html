@@ -1,0 +1,33 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+
+        <form>
+
+         <input type="date" id="dob"><br><br>
+         <button type="button" id="btn">Age</button>
+            <p id="Age"></p>
+        </form>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+         crossorigin="anonymous"></script>
+
+
+         <script>
+             $(document).ready(function(){
+                $("#btn").click(function(){
+                    let dob = $("#dob").val();
+                    dob = new Date(dob);
+                    var today = new Date();
+                    var Age = Math.floor((today-dob)/(365.25*24*60*60*1000));
+                    $("#Age").html('Age::' +Age);
+             })
+            })
+         </script>
+    </body>

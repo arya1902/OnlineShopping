@@ -1,0 +1,106 @@
+<html>
+    <head><script type="text/javascript">
+    function display()
+    {
+        var name=document.getElementsByName("user");
+        alert("Hello  " + name[0].value);
+        }</script>
+        <script type="text/javascript">
+function validate(){
+var i;
+var name_str=document.my_form.name;
+var email_str=document.my_form.email;
+var mobile=document.my_form.mobile;
+
+if((name_str.value=="null")||(name_str.value==""))
+{
+alert("Enter Some FieldName");
+return false;
+}
+if((email_str.value=="null")||(email_str.value==""))
+{
+alert("Enter Mail");
+return false;
+}
+if((mobile.value=="null")||(mobile.value==""))
+{
+alert("Enter Your Mobile No.");
+return false;
+}
+
+}
+
+function display()
+{
+var name1 = document.getElementById("nm1").value;
+var eml = document.getElementById("eml1").value;
+var num1 = document.getElementById("num1").value;
+
+}
+</script>
+        
+            <title>Practical 14</title>
+    
+            </style>
+    </head><body bgcolor="aqua">
+        <form method="POST" name="my_form" onsubmit="validate()"></form>
+        <center><h1>Feedback Form</h1></center>
+    <hr>
+    <center>
+        <tr>
+            <td>Name:</td>
+            <td>
+            <input type="text" name="user" placeholder="Enter your name here" class="txt">
+        </td>
+    </tr>
+</br> </br> </br><tr>
+            <td>Email:</td>
+            <td>
+            <input type="text" placeholder="Enter your email here" class="txt">
+        </td>
+    </tr>
+    <br><br></br>
+    <tr>
+        <td>Mobile Number:</td>
+        <td>
+        <input type="text" placeholder="Enter your mobile number here" class="txt">
+    </td>
+</tr>
+<br><br><br>
+    <tr>
+        
+        <td>Your Feedback</td>
+        <td>
+    <textarea  id="area"  name="area" rows="5" cols="40" placeholder="your text here"></textarea>
+    </td>
+    </tr>
+    <br><br> <br> 
+    <tr>
+        <td>Apps:</td>
+        <td>
+            WhatsApp:<input type="checkbox" name="hobby"  value="wp" />
+        <br> Insta:<input type="checkbox" name="hobby"  value="insta" />
+        <br>Facebook:<input type="checkbox" name="hobby"  value="ckt" />
+        </td>
+    </tr>
+    <br><br> <br> 
+    <tr>
+        <td>Gender::</td>
+        <td>
+            Male:<input type="radio" value="male"  name="gender">
+            Female:<input type="radio" value="female" name="gender">
+
+        </td>
+    </tr>
+    <br><br>
+    
+    <br><br>
+    <tr>
+        <td><input type="button" value="submit" onclick="display()"/></td>
+    </tr>
+    </table>
+    </center>
+    
+        </form>
+</body>
+</html>

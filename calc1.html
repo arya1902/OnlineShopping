@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="f">
+        No 1 :: <input type="text" name="n1"><br>
+        No 2 ::<input type="text" name="n2"><br>
+
+        Add ::<input type="checkbox" name="choice" value="add"><br>
+        Sub ::<input type="checkbox" name="choice" value="sub"><br>
+        Mul ::<input type="checkbox" name="choice" value="mul"><br>
+        Div ::<input type="checkbox" name="choice" value="div"><br>
+
+        <input type="button" value="add" onclick="add()"/>
+    </form>
+
+    <p id="PAns"></p>
+
+    <script>
+
+        function add(){
+            let n1 = parseInt(document.f.n1.value);
+            let n2 = parseInt(document.f.n2.value);
+            let ans = "Please select any operation";
+            let ch = " ";
+            let str = " ";
+           
+            let  PAns = document.getElementById("PAns");
+            for(let i = 0 ; i < document.f.choice.length ; i++){
+                
+                if(document.f.choice[i].checked){
+
+                    ch = document.f.choice[i].value;
+
+
+            if(ch == "add"){
+                ans = n1 + n2;
+                str = str + "add = "+ans+"<br>"
+           
+            }else if(ch == "sub"){
+                ans = n1 - n2;
+                str = str + "sub = "+ans+"<br>"
+
+            }else if(ch == "mul"){
+                ans = n1 * n2;
+                str = str + "mul = "+ans+"<br>"
+
+            }else if(ch == "div"){
+                ans = n1 / n2;
+                str = str + "div = "+ans+"<br>"
+                
+            }
+        
+                
+        }
+    }
+           
+            PAns.innerHTML = str;
+        }
+        </script>
+    </body>
+    </html>
